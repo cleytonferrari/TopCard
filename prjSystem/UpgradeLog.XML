@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="prjSystem">
+</Property><Property Name="Solution File" Value="C:\prjSystem\prjSystem\prjSystem.sln">
+</Property><Property Name="Date" Value="sábado, 5 de abril de 2008">
+</Property><Property Name="Time" Value="12:33">
+</Property></Properties><Event ErrorLevel="0" Project="prjSystem" Source="prjSystem.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="prjSystem" Source="prjSystem.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="prjSystem.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="prjSystem.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="prjSystem" Source="prjSystem.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

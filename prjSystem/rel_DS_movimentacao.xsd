@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="rel_DS_movimentacao" targetNamespace="http://tempuri.org/rel_DS_movpai.xsd" xmlns:mstns="http://tempuri.org/rel_DS_movpai.xsd" xmlns="http://tempuri.org/rel_DS_movpai.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="rel_DS_movimentacao" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="rel_DS_movimentacao" msprop:Generator_DataSetName="rel_DS_movimentacao" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="movpai" msprop:Generator_UserTableName="movpai" msprop:Generator_RowDeletedName="movpaiRowDeleted" msprop:Generator_RowChangedName="movpaiRowChanged" msprop:Generator_RowClassName="movpaiRow" msprop:Generator_RowChangingName="movpaiRowChanging" msprop:Generator_RowEvArgName="movpaiRowChangeEvent" msprop:Generator_RowEvHandlerName="movpaiRowChangeEventHandler" msprop:Generator_TableClassName="movpaiDataTable" msprop:Generator_TableVarName="tablemovpai" msprop:Generator_RowDeletingName="movpaiRowDeleting" msprop:Generator_TablePropName="movpai">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="pai_id" msprop:Generator_UserColumnName="pai_id" msprop:Generator_ColumnVarNameInTable="columnpai_id" msprop:Generator_ColumnPropNameInRow="pai_id" msprop:Generator_ColumnPropNameInTable="pai_idColumn" type="xs:string" />
+              <xs:element name="pai" msprop:Generator_UserColumnName="pai" msprop:Generator_ColumnVarNameInTable="columnpai" msprop:Generator_ColumnPropNameInRow="pai" msprop:Generator_ColumnPropNameInTable="paiColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="paicpf" msprop:Generator_UserColumnName="paicpf" msprop:Generator_ColumnVarNameInTable="columnpaicpf" msprop:Generator_ColumnPropNameInRow="paicpf" msprop:Generator_ColumnPropNameInTable="paicpfColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="movneto" msprop:Generator_UserTableName="movneto" msprop:Generator_RowDeletedName="movnetoRowDeleted" msprop:Generator_RowChangedName="movnetoRowChanged" msprop:Generator_RowClassName="movnetoRow" msprop:Generator_RowChangingName="movnetoRowChanging" msprop:Generator_RowEvArgName="movnetoRowChangeEvent" msprop:Generator_RowEvHandlerName="movnetoRowChangeEventHandler" msprop:Generator_TableClassName="movnetoDataTable" msprop:Generator_TableVarName="tablemovneto" msprop:Generator_RowDeletingName="movnetoRowDeleting" msprop:Generator_TablePropName="movneto">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="neto_id" msprop:Generator_UserColumnName="neto_id" msprop:Generator_ColumnVarNameInTable="columnneto_id" msprop:Generator_ColumnPropNameInRow="neto_id" msprop:Generator_ColumnPropNameInTable="neto_idColumn" type="xs:string" />
+              <xs:element name="neto" msprop:Generator_UserColumnName="neto" msprop:Generator_ColumnVarNameInTable="columnneto" msprop:Generator_ColumnPropNameInRow="neto" msprop:Generator_ColumnPropNameInTable="netoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="netocpf" msprop:Generator_UserColumnName="netocpf" msprop:Generator_ColumnVarNameInTable="columnnetocpf" msprop:Generator_ColumnPropNameInRow="netocpf" msprop:Generator_ColumnPropNameInTable="netocpfColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="pai_id" msprop:Generator_UserColumnName="pai_id" msprop:Generator_ColumnVarNameInTable="columnpai_id" msprop:Generator_ColumnPropNameInRow="pai_id" msprop:Generator_ColumnPropNameInTable="pai_idColumn" type="xs:string" />
+              <xs:element name="referencia" msprop:Generator_UserColumnName="referencia" msprop:Generator_ColumnVarNameInTable="columnreferencia" msprop:Generator_ColumnPropNameInRow="referencia" msprop:Generator_ColumnPropNameInTable="referenciaColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="datavencimento" msprop:Generator_UserColumnName="datavencimento" msprop:Generator_ColumnVarNameInTable="columndatavencimento" msprop:Generator_ColumnPropNameInRow="datavencimento" msprop:Generator_ColumnPropNameInTable="datavencimentoColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="valor" msprop:Generator_UserColumnName="valor" msprop:Generator_ColumnVarNameInTable="columnvalor" msprop:Generator_ColumnPropNameInRow="valor" msprop:Generator_ColumnPropNameInTable="valorColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="movfilho" msprop:Generator_UserTableName="movfilho" msprop:Generator_RowDeletedName="movfilhoRowDeleted" msprop:Generator_RowChangedName="movfilhoRowChanged" msprop:Generator_RowClassName="movfilhoRow" msprop:Generator_RowChangingName="movfilhoRowChanging" msprop:Generator_RowEvArgName="movfilhoRowChangeEvent" msprop:Generator_RowEvHandlerName="movfilhoRowChangeEventHandler" msprop:Generator_TableClassName="movfilhoDataTable" msprop:Generator_TableVarName="tablemovfilho" msprop:Generator_RowDeletingName="movfilhoRowDeleting" msprop:Generator_TablePropName="movfilho">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="filho_id" msprop:Generator_UserColumnName="filho_id" msprop:Generator_ColumnVarNameInTable="columnfilho_id" msprop:Generator_ColumnPropNameInRow="filho_id" msprop:Generator_ColumnPropNameInTable="filho_idColumn" type="xs:string" />
+              <xs:element name="filho" msprop:Generator_UserColumnName="filho" msprop:Generator_ColumnVarNameInTable="columnfilho" msprop:Generator_ColumnPropNameInRow="filho" msprop:Generator_ColumnPropNameInTable="filhoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="filhocpf" msprop:Generator_UserColumnName="filhocpf" msprop:Generator_ColumnVarNameInTable="columnfilhocpf" msprop:Generator_ColumnPropNameInRow="filhocpf" msprop:Generator_ColumnPropNameInTable="filhocpfColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="pai_id" msprop:Generator_UserColumnName="pai_id" msprop:Generator_ColumnVarNameInTable="columnpai_id" msprop:Generator_ColumnPropNameInRow="pai_id" msprop:Generator_ColumnPropNameInTable="pai_idColumn" type="xs:string" />
+              <xs:element name="referencia" msprop:Generator_UserColumnName="referencia" msprop:Generator_ColumnVarNameInTable="columnreferencia" msprop:Generator_ColumnPropNameInRow="referencia" msprop:Generator_ColumnPropNameInTable="referenciaColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="datavencimento" msprop:Generator_UserColumnName="datavencimento" msprop:Generator_ColumnVarNameInTable="columndatavencimento" msprop:Generator_ColumnPropNameInRow="datavencimento" msprop:Generator_ColumnPropNameInTable="datavencimentoColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="valor" msprop:Generator_UserColumnName="valor" msprop:Generator_ColumnVarNameInTable="columnvalor" msprop:Generator_ColumnPropNameInRow="valor" msprop:Generator_ColumnPropNameInTable="valorColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

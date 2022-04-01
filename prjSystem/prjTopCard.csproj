@@ -1,0 +1,521 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{95646C0E-3E29-4D04-8B2E-01F1B47A00C6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>prjSystem</RootNamespace>
+    <AssemblyName>TopCard</AssemblyName>
+    <ApplicationIcon>icone.ico</ApplicationIcon>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>58170E95DBAB87ADECEBFBC917D58790B98343FD</ManifestCertificateThumbprint>
+    <ManifestKeyFile>prjSystem_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetZone>LocalIntranet</TargetZone>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="FirebirdSql.Data.FirebirdClient, Version=2.0.1.0, Culture=neutral, PublicKeyToken=3750abcc3150b00c, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsBairro.cs" />
+    <Compile Include="clsBanco.cs" />
+    <Compile Include="clsBancoDados.cs" />
+    <Compile Include="clsConfig.cs" />
+    <Compile Include="clsEndereco.cs" />
+    <Compile Include="clsLogin.cs" />
+    <Compile Include="clsMovimentacao.cs" />
+    <Compile Include="clsMunicipio.cs" />
+    <Compile Include="clsCliente.cs" />
+    <Compile Include="clsUsuario.cs" />
+    <Compile Include="clsVipPai.cs" />
+    <Compile Include="frmBairroCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBairroCadastro.Designer.cs">
+      <DependentUpon>frmBairroCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBairroConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBairroConsulta.Designer.cs">
+      <DependentUpon>frmBairroConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBancoConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBancoConsulta.Designer.cs">
+      <DependentUpon>frmBancoConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEnderecoCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEnderecoCadastro.Designer.cs">
+      <DependentUpon>frmEnderecoCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEnderecoConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEnderecoConsulta.Designer.cs">
+      <DependentUpon>frmEnderecoConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmExportarDados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExportarDados.Designer.cs">
+      <DependentUpon>frmExportarDados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMovimentacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMovimentacao.Designer.cs">
+      <DependentUpon>frmMovimentacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMovimentacaoConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMovimentacaoConsulta.Designer.cs">
+      <DependentUpon>frmMovimentacaoConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMunicipioConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMunicipioConsulta.Designer.cs">
+      <DependentUpon>frmMunicipioConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClienteCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClienteCadastro.Designer.cs">
+      <DependentUpon>frmClienteCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClienteConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClienteConsulta.Designer.cs">
+      <DependentUpon>frmClienteConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSplash.Designer.cs">
+      <DependentUpon>frmSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsuarioCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUsuarioCadastro.Designer.cs">
+      <DependentUpon>frmUsuarioCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsuarioConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUsuarioConsulta.Designer.cs">
+      <DependentUpon>frmUsuarioConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVipPaiConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVipPaiConsulta.Designer.cs">
+      <DependentUpon>frmVipPaiConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="iniReader.cs" />
+    <Compile Include="mnAjuda.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnAjuda.Designer.cs">
+      <DependentUpon>mnAjuda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mnCadastros.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnCadastros.Designer.cs">
+      <DependentUpon>mnCadastros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mnRelatorio.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mnRelatorio.Designer.cs">
+      <DependentUpon>mnRelatorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="prjSystem.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmBairroCadastro.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmBairroCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBairroConsulta.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmBairroConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBancoConsulta.resx">
+      <DependentUpon>frmBancoConsulta.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEnderecoCadastro.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmEnderecoCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEnderecoConsulta.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmEnderecoConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExportarDados.resx">
+      <DependentUpon>frmExportarDados.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMovimentacao.resx">
+      <DependentUpon>frmMovimentacao.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMovimentacaoConsulta.resx">
+      <DependentUpon>frmMovimentacaoConsulta.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMunicipioConsulta.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMunicipioConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClienteCadastro.resx">
+      <DependentUpon>frmClienteCadastro.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClienteConsulta.resx">
+      <DependentUpon>frmClienteConsulta.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSplash.resx">
+      <DependentUpon>frmSplash.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsuarioCadastro.resx">
+      <DependentUpon>frmUsuarioCadastro.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsuarioConsulta.resx">
+      <DependentUpon>frmUsuarioConsulta.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVipPaiConsulta.resx">
+      <DependentUpon>frmVipPaiConsulta.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mnAjuda.resx">
+      <DependentUpon>mnAjuda.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mnCadastros.resx">
+      <DependentUpon>mnCadastros.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mnRelatorio.resx">
+      <DependentUpon>mnRelatorio.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rel_form.resx">
+      <DependentUpon>rel_form.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rel_RPT_bairro.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rel_RPT_bairro.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rel_RPT_hierarquica.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rel_RPT_hierarquica.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rel_RPT_recibo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rel_RPT_recibo.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="rel_DS_bairro.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rel_DS_bairro.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="rel_DS_movimentacao.cs">
+      <DependentUpon>rel_DS_movimentacao.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rel_DS_movimentacao.Designer.cs">
+      <DependentUpon>rel_DS_movimentacao.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rel_DS_recibo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rel_DS_recibo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="rel_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rel_form.Designer.cs">
+      <DependentUpon>rel_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rel_RPT_bairro.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rel_RPT_bairro.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="rel_RPT_hierarquica.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rel_RPT_hierarquica.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rel_RPT_recibo.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rel_RPT_recibo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salvar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alterar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chaves.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\confirmar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\erro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\excluir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lupa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\novo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Resources\iconeSisCliente.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="rel_DS_bairro.xsc">
+      <DependentUpon>rel_DS_bairro.xsd</DependentUpon>
+    </None>
+    <None Include="rel_DS_bairro.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>rel_DS_bairro.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="rel_DS_bairro.xss">
+      <DependentUpon>rel_DS_bairro.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\splashScreen.jpg" />
+    <None Include="Resources\splashScreen-E-Imobi.jpg" />
+    <None Include="Resources\icone_login.png" />
+    <None Include="Resources\icone_pessoa.png" />
+    <None Include="Resources\icone_proprietario.png" />
+    <None Include="Resources\icone_sistema1.png" />
+    <None Include="Resources\icone_ajuda.png" />
+    <None Include="Resources\icone_sistema.png" />
+    <None Include="Resources\icone_endereco.png" />
+    <None Include="Resources\icone_unidade_filial.png" />
+    <None Include="Resources\bgOffice2.jpg" />
+    <None Include="Resources\bgOffice.jpg" />
+    <None Include="Resources\logoAL.jpg" />
+    <None Include="Resources\form_icone_cadastro.png" />
+    <None Include="Resources\form_icone_lupa.png" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Resources\bg_formulario_azul.png" />
+    <None Include="Resources\bg_formulario.png" />
+    <None Include="Resources\bg01-transparente.png" />
+    <None Include="Resources\fundo0022.png" />
+    <None Include="Resources\FondoMenu1.gif" />
+    <None Include="Resources\FondoMenu.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="FirebirdSql.Data.FirebirdClient">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="iconeSisCliente.ico">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icone.ico" />
+    <None Include="rel_DS_movimentacao.xsc">
+      <DependentUpon>rel_DS_movimentacao.xsd</DependentUpon>
+    </None>
+    <None Include="rel_DS_movimentacao.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>rel_DS_movimentacao.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="rel_DS_movimentacao.xss">
+      <DependentUpon>rel_DS_movimentacao.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\impressora.png" />
+    <None Include="Resources\icone_movimentacao.png" />
+    <None Include="rel_DS_recibo.xsc">
+      <DependentUpon>rel_DS_recibo.xsd</DependentUpon>
+    </None>
+    <None Include="rel_DS_recibo.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>rel_DS_recibo.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="rel_DS_recibo.xss">
+      <DependentUpon>rel_DS_recibo.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\icone_relatorio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

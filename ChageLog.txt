@@ -1,0 +1,31 @@
+VERIFICAR:
+1 - Verificar a exclusão dos registro que possuem dependencias
+2 - Tabulação dos campos
+3 - Pesquisa por campos, um a um
+4 - Tamanho do campo no BD, com o tamanho do campo no Edit
+
+----
+Na hora de renovar a filiação, basta gerar uma tela com o codigo do cliente
+e o tipo de mensalidade, e a data, com isso gerar a movimentaçào para mais um ano
+
+
+
+STATUS:
+	A RECEBER
+	RECEBIDO
+
+PAGOA:
+
+	PAGO AVO
+	PAGO PAI
+	PAGO AMBOS
+	A PAGAR AVO
+	A PAGAR PAI
+	A PAGAR AMBOS
+	NÃO SE PAGA
+
+REFERENCIA:
+	ADESÃO
+	MENSALIDADE
+	ANUAL
+	ANUAL 2X

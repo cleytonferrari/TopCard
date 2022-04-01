@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asmv1:assemblyIdentity name="TopCardSystem.exe" version="1.0.0.0" publicKeyToken="ebecea83ede9081c" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="iconeSisCliente.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="TopCardSystem" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="TopCardSystem.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FirebirdSql.Data.FirebirdClient.dll" size="696320">
+      <assemblyIdentity name="FirebirdSql.Data.FirebirdClient" version="2.0.1.0" publicKeyToken="3750ABCC3150B00C" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>64UUjgono4EcXTbhoPDaCMG8yXc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TopCardSystem.exe" size="307200">
+      <assemblyIdentity name="TopCardSystem" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>ZQW3xfUyANzMqinVB3L4UqoER9k=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="iconeSisCliente.ico" size="97446">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>oWzQ2/FVUyBNB/+kTDIJNE2jaRc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="TopCardSystem.exe.config" size="831">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>41KVSgdfhuOP1EHG/kR2eDPQDKA=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=NinjaVista\Cleyton Ferrari" issuerKeyHash="47ff37a47dca4602567306fe465eb418599c224c" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>9VqbgCLBcNX5IW/3BBmMrz4fgZM=</DigestValue></Reference></SignedInfo><SignatureValue>KxclCIjcrXXpnZbD5KYprf/45Wd1UxLCfSBHyaouvm8L0J0BZlMOohw6Xoff5aw82u7ohawgFQL1XLzG62Ntud+Wz4GRA34oJax3UiuH9SBYzhipQFQoovoYKDkMZqsj3LSWzYjG/qwYICunCPgeeU9mHupHcaCmbqun2MXAbfI=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>6Ra/iLaQufCr2MjyIhTBMcBWjRNMLxr6aBOrBoIBwKs1w70AGPm87Xx8i/746+KDmEZvZwYcLL9CdDCwhzTHg6StybDaYEg0/hj2ALalPE3se3KwzLtRkxwM8BtIpOkny8aldba+ta3TH4NXDLf8m4h2ZEnGBshzrBPtfVMjTuE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="93811f3eaf8c1904f76f21f9d570c122809b5af5" Description="" Url=""><as:assemblyIdentity name="TopCardSystem.exe" version="1.0.0.0" publicKeyToken="ebecea83ede9081c" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=NinjaVista\Cleyton Ferrari</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>n3tHUo+P/dG/XEmV+B9/oaIBw1I=</DigestValue></Reference></SignedInfo><SignatureValue>1fegcEa1BMw6019Cmrj+eZ5G48Ir//c9gsXW1MhGQACziqIaEoWRP8FUO0W4b7xjbT6jKNLbXw0c07p5sQ6A3Qzv9PBqlTRU3gqI32CTOZk1xyhfxPPLe5qNTh3B4XCG1J3bEEKq2gwrGH+SKzsQesKlmPyPa5HPHkIxYfziXzU=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>6Ra/iLaQufCr2MjyIhTBMcBWjRNMLxr6aBOrBoIBwKs1w70AGPm87Xx8i/746+KDmEZvZwYcLL9CdDCwhzTHg6StybDaYEg0/hj2ALalPE3se3KwzLtRkxwM8BtIpOkny8aldba+ta3TH4NXDLf8m4h2ZEnGBshzrBPtfVMjTuE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIICATCCAWqgAwIBAgIQHs+ZRvpfE6RG8CiuOTlNkjANBgkqhkiG9w0BAQUFADA/MT0wOwYDVQQDHjQATgBpAG4AagBhAFYAaQBzAHQAYQBcAEMAbABlAHkAdABvAG4AIABGAGUAcgByAGEAcgBpMB4XDTA4MDMyMjA1MDkyNVoXDTA5MDMyMjExMDkyNVowPzE9MDsGA1UEAx40AE4AaQBuAGoAYQBWAGkAcwB0AGEAXABDAGwAZQB5AHQAbwBuACAARgBlAHIAcgBhAHIAaTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA6Ra/iLaQufCr2MjyIhTBMcBWjRNMLxr6aBOrBoIBwKs1w70AGPm87Xx8i/746+KDmEZvZwYcLL9CdDCwhzTHg6StybDaYEg0/hj2ALalPE3se3KwzLtRkxwM8BtIpOkny8aldba+ta3TH4NXDLf8m4h2ZEnGBshzrBPtfVMjTuECAwEAATANBgkqhkiG9w0BAQUFAAOBgQAOKds8+nAnHL8cPfFAo/32cTkeS6D49EOEFC8ZqSQ2IeFWItY+OcwfI9aI7Ma8o+Ex9meK8hTi78KZdzpxAlXrzqoBYl7v921dckHvd9PWpsMMTfuMm4JW5HMucyTMewePiHL8e0zMbM9zY3fIA1UNtODM0hS3pWy769axELJBug==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

@@ -1,0 +1,38 @@
+D:\prjSystem\prjSystem\obj\Debug\ResolveAssemblyReference.cache
+D:\prjSystem\prjSystem\obj\Debug\prjSystem.Properties.Resources.resources
+D:\prjSystem\prjSystem\obj\Debug\prjSystem.csproj.GenerateResource.Cache
+D:\prjSystem\prjSystem\obj\Debug\prjSystem.frmMain.resources
+D:\prjSystem\TopCardSystem.exe.config
+D:\prjSystem\prjSystem\obj\Debug\TopCardSystem.exe
+D:\prjSystem\prjSystem\obj\Debug\TopCardSystem.pdb
+D:\prjSystem\TopCardSystem.exe
+D:\prjSystem\TopCardSystem.pdb
+D:\prjSystem\prjSystem\obj\Debug\prjSystem.frmBairroCadastro.resources
+D:\prjSystem\prjSystem\obj\Debug\prjSystem.frmBairroConsulta.resources
+D:\prjSystem\prjSystem\obj\Debug\prjSystem.frmEnderecoConsulta.resources
+D:\prjSystem\prjSystem\obj\Debug\prjSystem.frmEnderecoCadastro.resources
+D:\prjSystem\prjSystem\obj\Debug\prjSystem.frmEnderecoPesqBairro.resources
+D:\prjSystem\prjSystem\obj\Debug\prjSystem.frmEnderecoPesqMunicipio.resources
+D:\prjSystem\prjSystem\obj\Debug\TopCardSystem.exe.manifest
+D:\prjSystem\prjSystem\obj\Debug\TopCardSystem.application
+D:\prjSystem\TopCardSystem.exe.manifest
+D:\prjSystem\TopCardSystem.application
+D:\AL Software\TopCardSystem.exe.config
+D:\AL Software\prjSystem\obj\Debug\TopCardSystem.exe
+D:\AL Software\prjSystem\obj\Debug\TopCardSystem.pdb
+D:\AL Software\prjSystem\obj\Debug\ResolveAssemblyReference.cache
+D:\AL Software\prjSystem\obj\Debug\prjSystem.frmBairroCadastro.resources
+D:\AL Software\prjSystem\obj\Debug\prjSystem.frmBairroConsulta.resources
+D:\AL Software\prjSystem\obj\Debug\prjSystem.frmEnderecoCadastro.resources
+D:\AL Software\prjSystem\obj\Debug\prjSystem.frmEnderecoConsulta.resources
+D:\AL Software\prjSystem\obj\Debug\prjSystem.frmEnderecoPesqBairro.resources
+D:\AL Software\prjSystem\obj\Debug\prjSystem.frmEnderecoPesqMunicipio.resources
+D:\AL Software\prjSystem\obj\Debug\prjSystem.frmMain.resources
+D:\AL Software\prjSystem\obj\Debug\prjSystem.Properties.Resources.resources
+D:\AL Software\prjSystem\obj\Debug\prjSystem.csproj.GenerateResource.Cache
+D:\AL Software\prjSystem\obj\Debug\TopCardSystem.exe.manifest
+D:\AL Software\prjSystem\obj\Debug\TopCardSystem.application
+D:\AL Software\TopCardSystem.exe.manifest
+D:\AL Software\TopCardSystem.application
+D:\AL Software\TopCardSystem.exe
+D:\AL Software\TopCardSystem.pdb
